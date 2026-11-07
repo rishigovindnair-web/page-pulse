@@ -4,6 +4,12 @@ Page Pulse is a browser agent that uses your own GPU to perform actions on a web
 
 ![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-blue) ![Chrome extension: Manifest V3](https://img.shields.io/badge/Chrome-Manifest%20V3-4285F4) ![Runs on WebGPU](https://img.shields.io/badge/runs%20on-WebGPU-005A9C) ![Model: fine-tuned Qwen3-4B](https://img.shields.io/badge/model-fine--tuned%20Qwen3--4B-6E40C9)
 
+## Demo
+
+![Page Pulse sending an email from Gmail, with approval prompts in the side panel](docs/page-pulse-demo.gif)
+
+This is a real run at 3x speed, with the model loading cut out and the email address blurred. Page Pulse opens a new email in Gmail, fills in the recipient and subject, and sends it. It asks for approval before typing anything the request didn't spell out, and again before sending.
+
 ## The problem
 
 Most AI browser agents send every page to a cloud model. That means your inbox, your bank and your shopping cart all get sent. Most people wouldn't paste their email into a chatbot, but that is what these agents do, and each action costs money. They also follow whatever the page says, so hidden text on a page can steer them.
